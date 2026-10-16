@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+    <h1>Black Goese Bistro | Pizza-on-Demand</h1>
+    <p>
+        Available for Delivery
+    </p>
+
+    <form action="http://www.blackgoosebistro.com/pizza.php"
+    method="post" >
+        <fieldset border="1">
+        <p>
+            <legend>Your Information</legend>
+        </p>
+
+        <p>
+            <label for="name">Nama Produk: </label>
+            <input type="text" id="name" name="name">
+        </p>
+
+        <p>
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address">
+        </p>
+
+        <p>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="intructions">Delivery Intructions: </label><br>
+            <textarea
+            id="intructions"
+            name="intructions"
+            rows="4"
+            cols="50"
+            maxlength="400"
+            placeholder="no more than 400 characters">
+            </textarea>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Design Your Pizza</legend>
+        <p>Pizza Specs</p>
+        <p>Choose 1:</p>
+
+        <p>
+            <input type="radio" id="classic" name="crust"
+            value="Classic white" required>
+            <label for="classic">Classic white</label><br>
+
+             <input type="radio" id="classic" name="crust"
+            value="Multigrain" required>
+            <label for="classic">Multigrain</label><br>
+
+              <input type="radio" id="classic" name="crust"
+            value="Cheese" required>
+            <label for="classic">Cheese</label><br>
+
+             <input type="radio" id="classic" name="crust"
+            value="Gluten" required>
+            <label for="classic">Gluten</label><br>
+        </p>
+
+        <p>Topping</p>
+
+        <p> 
+            <input type="checkbox" id="redsauce" name="toppings"
+            value="Multigrain" checked>
+            <label for="redsauce">Red Sauce</label><br>
+
+            <input type="checkbox" id="redsauce" name="toppings"
+            value="Multigrain">
+            <label for="redsauce">Red Sauce</label><br>
+
+            <input type="checkbox" id="redsauce" name="toppings"
+            value="Multigrain">
+            <label for="redsauce">Red Sauce</label><br>
+
+            <input type="checkbox" id="redsauce" name="toppings"
+            value="Multigrain">
+            <label for="redsauce">Red Sauce</label><br>
+
+            <input type="checkbox" id="redsauce" name="toppings"
+            value="Multigrain">
+            <label for="redsauce">Red Sauce</label><br>
+
+            <input type="checkbox" id="redsauce" name="toppings"
+            value="Multigrain">
+            <label for="redsauce">Red Sauce</label><br>
+
+            <input type="checkbox" id="redsauce" name="toppings"
+            value="Multigrain">
+            <label for="redsauce">Red Sauce</label><br>
+        </p>
+
+        <p>
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </p>
+    </fieldset>
+    <p>
+        <input type="Submit" value="Submit">
+        <input type="Reset" value="Reset">
+    </p>
+    </form>>
+</body>
+</html
