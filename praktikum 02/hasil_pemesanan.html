@@ -2,45 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hasil Pemesanan Barang</title>
 </head>
 <body>
-  <h1>Thank You</h1>
 
-  <p>
-   Terima kasih telah memesan!. 
-   Kami telah menerima informasi berikut tentang pesanan Anda:
-  </p>
+  <hr>
 
-  <h2>Your Information</h2>
-  <div class="info">
-    <strong>Nama Produk:</strong> <span id="name"></span><br>
-    <strong>Deskripsi:</strong> <span id="description"></span><br>
-    <strong>Nomor Akun:</strong> <span id="Account no"></span><br>
-    <strong>Tipe Pembayaran:</strong> <span id="payment_type"></span><br>
-    <strong>Pengguna Akun:</strong> <span id="account_holder"></span><br>
-    <strong>Nomor Telepon :</strong> <span id="phone"></span><br>
-    <strong>Email:</strong> <span id="email"></span>
-  </div>
+  <form action="hasil_pemesanan.html" method="get">
+    <table cellpadding="4">
+      <tr>
+        <td align="right" valign="top"><label for="name">Nama Produk: Keyboard Mechanical</label></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top"><label for="description">Deskripsi: Keyboard mekanikal 75% dengan switch merah</label></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="Account no">Nomor Akun : 1234567890</label></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="payment_type">Tipe Pembayaran : Gopay</label></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="account_holder">Pengguna Akun : Muhammad Alvarrel</label></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="jumlah">Jumlah Transaksi : 2</label></td>
+      <tr>
+        <td align="right"><label for="phone">Nomor Telepon : 082110027386</label></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="email">Email : mu.alvarrel@gmail.com</label></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </form>
 
-  <footer>Halaman ini hanya untuk tujuan pendidikan. Tidak ada produk yang akan dikirim.</footer>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-
-    function show(id, value) {
-      // textContent supaya input user tidak dieksekusi sebagai HTML
-      document.getElementById(id).textContent = value || "-";
-    }
-
-    show("name", params.get("name"));
-    show("description", params.get("description"));
-    show("Account no", params.get("Account no"));
-    show("payment_type", params.get("payment_type"));
-    show("account_holder", params.get("account_holder"));
-    show("phone", params.get("phone"));
-    show("email", params.get("email"));
-  </script>
 </body>
 </html>
